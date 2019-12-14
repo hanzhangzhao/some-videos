@@ -6,24 +6,13 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="../css/index.css" rel="stylesheet">
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/index.css" rel="stylesheet">
 
-    <script>
-        // function ($) {
-        //     //为异步请求设置CSRF令牌
-        //     $.ajaxSetup({
-        //         headers: {
-        //             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        //         }
-        //     });
-        // }
-    </script>
 </head>
 <body>
 <div class="container-fluid admin-top">
-    <!--导航-->
     <nav class="navbar navbar-expand-lg navbar-dark primary-color">
         <a class="navbar-brand" href="#">Some Video</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -60,16 +49,14 @@
         </div>
     </nav>
 </div>
-<!--主体-->
+
 <div class="container-fluid admin_menu">
     <div class="row">
         <div class="col-xs-12 col-sm-3 col-lg-2 left-menu">
             <div class="search-menu">
                 <input class="form-control input-lg" type="text" placeholder="Search.." onkeyup="search(this)">
             </div>
-            <!--扩展模块动作 start-->
             <div class="panel panel-default">
-                <!--系统菜单-->
                 <div class="panel-heading">
                     <h4 class="panel-title">Profile</h4>
                     <a class="panel-collapse" data-toggle="collapse" href="javascript:;">
@@ -78,7 +65,7 @@
                 </div>
                 <ul class="list-group menus">
                     <li class="list-group-item" id="35">
-                        <a href="/admin/profile">My Info </a>
+                        <a href="/admin/profile">Change Password </a>
                     </li>
                 </ul>
                 <div class="panel-heading">
@@ -95,9 +82,6 @@
                         <a href="/admin/lesson">Edit Videos</a>
                     </li>
                 </ul>
-                <!----------返回模块列表 start------------>
-                <!--模块列表-->
-                <!--模块列表 end-->
             </div>
         </div>
         <div class="col-xs-12 col-sm-9 col-lg-10">
@@ -113,9 +97,18 @@
 @include('admin.layout.errors')
 @include('flash::message')
 
-<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script>
     $('#flash-overlay-modal').modal();
+</script>
+<script>
+    $(document).ready(function() {
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+    });
 </script>
 </html>

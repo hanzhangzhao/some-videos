@@ -4,8 +4,10 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\TagRequest;
+use App\Model\Tag;
 
-class TagController extends Controller
+class TagController extends CommonController
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +16,9 @@ class TagController extends Controller
      */
     public function index()
     {
-        return view('admin.tag.index');
+        $data = Tag::get();
+//        dd($data);
+        return view('admin.tag.index',compact('data'));
     }
 
     /**
@@ -59,7 +63,9 @@ class TagController extends Controller
      */
     public function edit($id)
     {
-        //
+//        dd($id);
+        $model = Tag::find($id);
+        return view('admin.tag.edit', compact('model'));
     }
 
     /**
@@ -71,7 +77,11 @@ class TagController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+//        dd($id);
+        $model = Tag::find($id);
+        $model['name'] = $request['name'];
+        $model->save();
+        return redirect('/admin/tag');
     }
 
     /**
@@ -82,6 +92,9 @@ class TagController extends Controller
      */
     public function destroy($id)
     {
-        //
+//        dd($id);
+        Tag::destroy($id);
+
+        return $this->success('Delete Successful');
     }
 }

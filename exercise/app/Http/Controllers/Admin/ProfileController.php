@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Auth;
 
-class ProfileController extends Controller
+class ProfileController extends CommonController
 {
     public function passwordForm() {
         return view('admin.profile.passwordForm');

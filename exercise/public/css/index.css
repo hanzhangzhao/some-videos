@@ -80,6 +80,9 @@ table > tfoot > tr > td {
 .form-control {
     border-radius: 0;
 }
+.panel {
+    margin-bottom: 0.5rem;
+}
 .panel-heading {
     position: relative;
     height: 2.5rem;

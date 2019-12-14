@@ -26,7 +26,7 @@
             </div>
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
-    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
             $('#modal_message').modal('show');
