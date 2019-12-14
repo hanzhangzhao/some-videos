@@ -1,0 +1,142 @@
+
+a {
+    text-decoration: none !important;
+}
+h4 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+table > thead > tr > td,
+table > tbody > tr > td,
+table > tfoot > tr > td {
+    vertical-align: middle !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.admin-top {
+    background: #222222;
+    margin-bottom: 10px;
+}
+.admin_menu {
+    position: relative;
+}
+.admin-top .navbar {
+    border: 0;
+    margin-bottom: 0;
+}
+.fa-user {
+    padding-right: 5px;
+}
+.list-group .list-group-item.active {
+    background: #428bca;
+    border-color: #428bca;
+}
+.list-group .list-group-item.active a {
+    color: #ffffff;
+}
+.nav {
+    margin-bottom: 20px;
+}
+.nav-tabs {
+    padding: 0.75rem 1.25rem;
+}
+.dropdown-item {
+    padding: 0.25rem 1rem;
+}
+.dropdown-menu {
+    min-width: fit-content;
+}
+.nav li.active a,
+.nav li.active a:hover,
+.nav li.active a:focus {
+    border: 1px solid #428bca !important;
+    background-color: #428bca !important;
+    color: #ffffff;
+}
+.nav li a:hover {
+    background: #f3f3f3 !important;
+    border-color: #dcdcdc #dcdcdc #428bca #dcdcdc;
+}
+.nav li a:focus {
+    background: none;
+    border-bottom: solid 1px #428bca;
+}
+.nav li a {
+    font-size: 14px;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+}
+#modalMessage {
+    z-index: 10000000000;
+}
+.form-control {
+    border-radius: 0;
+}
+.panel-heading {
+    position: relative;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: .75rem 1.25rem;
+    background: #eeeeee;
+    border-left: solid 1px #dddddd;
+}
+.panel-heading .panel-collapse {
+    width: 40px;
+    line-height: 2.5rem;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    color: #777777;
+    text-align: center;
+    background: #cccccc;
+    border-left: solid 1px #dddddd;
+}
+.panel-heading1 {
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: .75rem 1.25rem;
+    background: #eeeeee;
+    border: solid 1px #dddddd;
+}
+.list-group-item:last-child {
+    border-radius: 0 !important;
+}
+.list-group-item:first-child {
+    border-radius: 0 !important;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-top: solid 1px #dddddd;
+    padding: 15px 0;
+    margin-top: 20px;
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.panel-body {
+    display: block;
+    padding: .75rem 1.25rem 0;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-top: none;
+}
+
+.form-panel {
+    margin-bottom: 0.7rem;
+}
+
+.modal-footer {
+    padding: 0;
+}

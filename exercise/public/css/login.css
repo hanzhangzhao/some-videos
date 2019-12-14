@@ -1,0 +1,104 @@
+
+.loginWrapper {
+    height: 1770px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #f1f1f1;
+    height:100vh;
+}
+
+.logo {
+    /*position: absolute;*/
+    padding-top: 46px;
+    margin-left: 50px;
+    font-size: 40px;
+}
+
+.loginBox {
+    margin: 90px auto;
+    padding: 50px 50px 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0,0,0,.1);
+    vertical-align: middle;
+    display: inline-block;
+    box-sizing: border-box;
+    height: fit-content;
+}
+
+.loginTitleWrapper {
+    margin: 0 auto 50px;
+    font-weight: 400;
+    color: #969696;
+    text-decoration: none;
+}
+
+.loginTitle {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.active {
+    font-weight: 700;
+    color: #969696;
+    border-bottom: 2px solid #969696;
+}
+
+.signInContainer {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.signInUserName {
+    height: 50px;
+    margin-bottom: 0;
+    padding: 4px 12px 4px 35px;
+    border: 1px solid #c8c8c8;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0 !important;
+    background-color: hsla(0,0%,71%,.1);
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+.signInPassword {
+    height: 50px;
+    margin-bottom: 0;
+    padding: 4px 12px 4px 35px;
+    border: 1px solid #c8c8c8;
+    border-radius: 0 0 4px 4px !important;
+    background-color: hsla(0,0%,71%,.1);
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+.fa-user {
+    position: absolute;
+    top: 18px;
+    left: 12px;
+    font-size: 16px;
+    color: #969696;
+}
+
+.fa-lock {
+    position: absolute;
+    top: 18px;
+    left: 12px;
+    font-size: 16px;
+    color: #969696;
+}
+
+.loginButton {
+    padding: 9px 18px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+}
+
+.form-control:focus {
+    background-color: inherit;
+}
+
+.copyright {
+    height: 100px;
+}
