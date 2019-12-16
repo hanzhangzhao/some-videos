@@ -10,7 +10,7 @@
 .logo {
     /*position: absolute;*/
     padding-top: 46px;
-    margin-left: 50px;
+    /*margin-left: 50px;*/
     font-size: 40px;
 }
 
@@ -45,8 +45,8 @@
 }
 
 .signInContainer {
-    position: relative;
-    margin-bottom: 30px;
+    /*position: relative;*/
+    margin: 0 auto 30px auto;
 }
 
 .signInUserName {

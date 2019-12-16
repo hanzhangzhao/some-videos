@@ -10,8 +10,8 @@
 </head>
 <body>
 <div class="loginWrapper">
-    <div class="container row">
-    <div class="logo col-md-3">
+    <div class="container ">
+    <div class="logo col-md-4">
         Some Videos
     </div>
     <div class="col-md-4 loginBox">
