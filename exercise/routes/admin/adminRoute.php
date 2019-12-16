@@ -10,4 +10,8 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function() {
     Route::post('profile','ProfileController@changePassword');
 
     Route::resource('tag','TagController');
+    Route::resource('video','VideoController');
+
+    Route::any('/uploader','UploadPicController@uploader');
+    Route::any('/fileLists','UploadPicController@fileLists');
 });

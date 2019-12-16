@@ -109,6 +109,7 @@ table > tfoot > tr > td {
     padding: .75rem 1.25rem;
     background: #eeeeee;
     border: solid 1px #dddddd;
+    border-bottom: none;
 }
 .list-group-item:last-child {
     border-radius: 0 !important;
@@ -117,7 +118,7 @@ table > tfoot > tr > td {
     border-radius: 0 !important;
 }
 .footer {
-    position: absolute;
+    /*position: absolute;*/
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -133,7 +134,15 @@ table > tfoot > tr > td {
     padding: .75rem 1.25rem 0;
     background-color: #fff;
     border: 1px solid rgba(0,0,0,.125);
-    border-top: none;
+
+}
+
+.panel-body1 {
+    display: block;
+    padding: .75rem 1.25rem 0;
+    margin-top: 0.75rem;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
 }
 
 .form-panel {
@@ -142,4 +151,16 @@ table > tfoot > tr > td {
 
 .modal-footer {
     padding: 0;
+}
+
+.panel-foot {
+    padding: .5rem 1.25rem;
+    background: #eeeeee;
+    border: solid 1px #dddddd;
+    border-top: none;
+}
+
+.container {
+    padding: 0 10px 15px;
+    border: 1px solid rgba(0,0,0,.125);
 }

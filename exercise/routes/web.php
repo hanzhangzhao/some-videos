@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return 'hello';
+    return 'Please goto /admin';
 });
 
 include __DIR__.'/admin/adminRoute.php';

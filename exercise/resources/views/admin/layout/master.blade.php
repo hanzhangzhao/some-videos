@@ -79,7 +79,7 @@
                         <a href="/admin/tag">Edit Tags</a>
                     </li>
                     <li class="list-group-item" id="40">
-                        <a href="/admin/lesson">Edit Videos</a>
+                        <a href="/admin/video">Edit Videos</a>
                     </li>
                 </ul>
             </div>
